@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 
 const JoinCommunities = ({ onBack }: { onBack: () => void }) => {
   const handleJoinWhatsApp = () => {
-    window.open('https://whatsapp.com/channel/0029VbBFTkBLI8YguYWtvH3D', '_blank');
+    window.open('https://chat.whatsapp.com/JL6NejWpg8cAQ8OyKJRdEI', '_blank');
   };
 
   const handleJoinTelegram = () => {
