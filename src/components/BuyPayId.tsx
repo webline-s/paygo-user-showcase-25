@@ -168,7 +168,7 @@ const BuyPayId = ({
               <div className="flex justify-between items-center py-4 border-b border-gray-200">
                 <span className="text-gray-600">Account Number</span>
                 <div className="flex items-center space-x-2">
-                  <span className="font-bold text-lg">5051090733</span>
+                  <span className="font-bold text-lg">6063838007</span>
                   <Button onClick={() => handleCopy('8105415222')} className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 text-sm rounded flex items-center space-x-1">
                     <Copy className="w-4 h-4" />
                     <span>Copy</span>
@@ -178,7 +178,7 @@ const BuyPayId = ({
 
               <div className="flex justify-between items-center py-4 border-b border-gray-200">
                 <span className="text-gray-600">Account Name</span>
-                <span className="font-bold text-lg">PayGo-MAHMUD MOHAMMED</span>
+                <span className="font-bold text-lg">PayGo-ABDULSAMAD OLAWALE NASIRU</span>
               </div>
             </div>
 
