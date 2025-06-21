@@ -158,74 +158,69 @@ const BuyPayId = ({ onBack }: { onBack: () => void }) => {
       case 3:
         return (
           <div className="space-y-6">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                  <div className="w-6 h-6 bg-orange-400 rounded-full"></div>
-                </div>
-                <div>
-                  <p className="text-sm text-gray-600">{formData.email}</p>
-                </div>
-              </div>
-              <div className="text-right">
-                <p className="text-2xl font-bold">NGN 7,250</p>
+            <div className="text-center mb-8">
+              <h2 className="text-xl font-bold text-gray-800 mb-2">Complete Payment</h2>
+              <p className="text-gray-600">Transfer ₦7,250 to the account below</p>
+            </div>
+
+            <div className="bg-blue-50 rounded-lg p-4 mb-6">
+              <div className="flex items-center space-x-2 text-blue-600">
+                <span className="text-sm font-medium">Email:</span>
+                <span className="text-sm">financial1240@gmail.com</span>
               </div>
             </div>
 
-            <p className="text-center text-lg font-medium">
-              Complete this bank transfer to proceed
-            </p>
-
-            <div className="bg-gray-100 rounded-lg p-6 space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="font-medium">Amount</span>
+            <div className="space-y-4">
+              <div className="flex justify-between items-center py-4 border-b border-gray-200">
+                <span className="text-gray-600">Amount</span>
                 <div className="flex items-center space-x-2">
-                  <span className="text-xl font-bold">NGN 7,250</span>
-                  <Button onClick={() => handleCopy('7,250')} className="bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 text-sm">
-                    Copy
+                  <span className="font-bold text-lg">₦7,250</span>
+                  <Button 
+                    onClick={() => handleCopy('7250')} 
+                    className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 text-sm rounded flex items-center space-x-1"
+                  >
+                    <Copy className="w-4 h-4" />
+                    <span>Copy</span>
                   </Button>
                 </div>
               </div>
 
-              <div className="flex items-center justify-between">
+              <div className="flex justify-between items-center py-4 border-b border-gray-200">
+                <span className="text-gray-600">Bank Name</span>
+                <span className="font-bold text-lg">Moniepoint MFB</span>
+              </div>
+
+              <div className="flex justify-between items-center py-4 border-b border-gray-200">
+                <span className="text-gray-600">Account Number</span>
                 <div className="flex items-center space-x-2">
-                  <span className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-white text-xs">34</span>
-                  <span className="font-medium">Account Number</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span className="text-xl font-bold">8973640269</span>
-                  <Button onClick={() => handleCopy('8973640269')} className="bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 text-sm">
-                    Copy
+                  <span className="font-bold text-lg">8105415222</span>
+                  <Button 
+                    onClick={() => handleCopy('8105415222')} 
+                    className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 text-sm rounded flex items-center space-x-1"
+                  >
+                    <Copy className="w-4 h-4" />
+                    <span>Copy</span>
                   </Button>
                 </div>
               </div>
 
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-2">
-                  <span className="w-6 h-6 bg-green-500 rounded flex items-center justify-center text-white text-xs">$</span>
-                  <span className="font-medium">Bank Name</span>
-                </div>
-                <span className="text-xl font-bold">Palmpay</span>
-              </div>
-
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-2">
-                  <span className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-white text-xs">i</span>
-                  <span className="font-medium">Account Name</span>
-                </div>
-                <span className="text-xl font-bold">Khalifah Ibrahim</span>
+              <div className="flex justify-between items-center py-4 border-b border-gray-200">
+                <span className="text-gray-600">Account Name</span>
+                <span className="font-bold text-lg">PayGo-Samuel Kelly</span>
               </div>
             </div>
 
-            <p className="text-sm text-gray-600">
-              Kindly proceed with the payment for your PAY ID. Complete the bank transfer to activate your PAY ID.
-            </p>
+            <div className="bg-blue-50 rounded-lg p-4 mt-6">
+              <p className="text-blue-800 text-sm text-center">
+                Make transfer and click "I have completed payment" below
+              </p>
+            </div>
 
             <Button
               onClick={() => setCurrentStep(4)}
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 text-lg rounded-lg"
+              className="w-full bg-green-600 hover:bg-green-700 text-white py-4 text-lg rounded-lg font-medium"
             >
-              I have made this bank Transfer
+              I have completed payment
             </Button>
           </div>
         );
