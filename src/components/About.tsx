@@ -74,13 +74,13 @@ const About = ({ onBack }: { onBack: () => void }) => {
         <div className="border-t pt-6 mt-8">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Us</h3>
           <div className="space-y-2 text-gray-700">
-            <p>Phone: +2348037750681</p>
+            <p>Phone: +2348079406921</p>
             <p>Address: 33 Financial Street, Lagos, Nigeria</p>
           </div>
         </div>
 
         <div className="text-center text-gray-500 mt-8 pt-6 border-t">
-          <p>PayGo © 2023. All rights reserved.</p>
+          <p>PayGo © 2024. All rights reserved.</p>
         </div>
       </div>
     </div>
