@@ -144,7 +144,7 @@ const BuyPayId = ({
             <div className="bg-blue-50 rounded-lg p-4 mb-6">
               <div className="flex items-center space-x-2 text-blue-600">
                 <span className="text-sm font-medium">Email:</span>
-                <span className="text-sm">financial1240@gmail.com</span>
+                <span className="text-sm">odugwumoney345@gmail.com</span>
               </div>
             </div>
 
